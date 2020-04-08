@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Adventures of Buzzy the Bee</title>
+  <!-- Step 1 - Pull in buzz.js -->
+
+  <script>
+    // Step 2 - Define maxRows and maxColumns
+    // Properties of game
+    var maxRows;
+    var maxColumns;
+    var websPerLevel;
+    
+    // Step 3 - Track if we are currently in a game
+
+    // Timer is used to decrease oxygen once user starts game
+    var decreaseEnergyTimer;
+
+    // Step 5 - Add startGame code
+    function startGame() {
+    }
+
+    // Step 6 - Add Event Listeners
+    setupKeyListener(39, function () {
+    });
+    setupKeyListener(37, function () {
+    });
+    setupKeyListener(38, function () {
+    });
+    setupKeyListener(40, function () {
+    });
+    setupKeyListener(32, function () {
+    });
+
+    // Step 7 - Complete decrease energy function
+    function decreaseEnergy(decreaseAmount) {
+    }
+
+    // Step 8 - Check if we lost
+    function checkForLoss(currentEnergy) {
+    }
+
+    // Step 9 - Check if we won!
+    function levelCompleted(completeGameTile) {
+    }
+
+    </script>
+  <style>
+    .gameImage {
+      max-width: 100%;
+      max-height: 100%;
+      text-align: center;
+      vertical-align: middle;
+      display: block;
+      margin: auto;
+    }
+    
+    #gameboard {
+      border: solid 10px rgb(150, 180, 170);
+      display: inline-block;
+      background-image: url("tree.jpg");
+      background-size: cover;
+    }
+    
+    .gameSquare {
+      width: 68px;
+      height: 68px;
+      clear: none;
+      float: left;
+    }
+    
+    #statusScreen {
+      display: inline-block;
+      width: 300px;
+    }
+    
+    #currentEnergy {
+      display: inline-block;
+      background-color: green;
+      width: 100px;
+    }
+    
+    #currentEnergyWrap {
+      display: inline-block;
+      border: solid 1px black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Adventures of Buzzy the Bee!</h1>
+  <p>
+
+    <b>Instructions:</b> Help Buzzy the Bee get the honey while avoiding the spider webs before his energy runs out!
+  </p>
+  <input type="button" value="Start Game" />
+  <br/>
+
+  <div id="gameboard">
+    <script>
+      // Step 4 : Setup game board
+      
+    </script>
+  </div>
+  <div id="statusScreen">
+    <div>
+      Current Level: <span id="currentLevel">1</span>
+    </div>
+    <br/>
+    <br/>
+    <div>
+      Current Energy:
+      <div id="currentEnergyWrap">
+        <div id="currentEnergy">100</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
